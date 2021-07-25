@@ -139,8 +139,8 @@ public class ShaadiTest {
 			int scrollstart=(int) (dim.getHeight()*.3);
 			int scrollend=(int) (dim.getHeight()*.1);
 			new TouchAction((PerformsTouchActions) driver).press(PointOption.point(scrollstart,scrollend)).moveTo(PointOption.point(scrollend,0)).release().perform();
-			System.out.println("Scrolling completed");	
-			Thread.sleep(2000);
+			System.out.println("Scrolling completed");			
+		 	waitFor("2");
 			
 		}
 	  /* This method is used to wait for an element on mobile screen */
